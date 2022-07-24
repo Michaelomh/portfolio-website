@@ -1,10 +1,10 @@
-import React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import React from 'react';
+import { Box, Text } from '@chakra-ui/react';
 
 export const About = () => {
   return (
     <Box>
-      <Text textStyle={"heading1"}>About</Text>
+      <Text textStyle={'heading1'}>About</Text>
     </Box>
   );
 };
