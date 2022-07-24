@@ -1,6 +1,6 @@
 import { ChakraProvider, theme } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { About } from "./pages/About/About";
 import { Home } from "./pages/Home/Home";
 
