@@ -1,6 +1,11 @@
-import React from "react";
-import { useColorMode, useColorModeValue, IconButton, SystemStyleObject } from "@chakra-ui/react";
-import { FaMoon, FaSun } from "react-icons/fa";
+import React from 'react';
+import {
+  useColorMode,
+  useColorModeValue,
+  IconButton,
+  SystemStyleObject,
+} from '@chakra-ui/react';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 type ColorModeSwitcherProps = {
   sx?: SystemStyleObject;
@@ -8,7 +13,7 @@ type ColorModeSwitcherProps = {
 
 export const ColorModeSwitcher = ({ sx }: ColorModeSwitcherProps) => {
   const { toggleColorMode } = useColorMode();
-  const text = useColorModeValue("dark", "light");
+  const text = useColorModeValue('dark', 'light');
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
   return (

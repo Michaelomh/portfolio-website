@@ -1,5 +1,5 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import theme from "../src/theme";
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from '../src/theme';
 
 export const parameters = {
   controls: { expanded: true },
