@@ -19,9 +19,13 @@ export const Sidebar = ({ navigationItems }: navigationType) => {
                 {...styles.sidebarNavigation}
                 key={navigationItem.name}
               >
-                <Link href={navigationItem.link} {...styles.sidebarLink}>
-                  {navigationItem.name}
-                </Link>
+                {navigationItem.link ? (
+                  <Link href={navigationItem.link} {...styles.sidebarLink}>
+                    {navigationItem.name}
+                  </Link>
+                ) : (
+                  <>{navigationItem.name}</>
+                )}
               </Text>
             );
           })}
