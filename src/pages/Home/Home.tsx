@@ -4,7 +4,7 @@ import { Box, Text } from '@chakra-ui/react';
 export const Home = () => {
   return (
     <Box>
-      <Text textStyle={'heading1'}>Home</Text>
+      <Text textStyle={'heading1'}>Home 2</Text>
     </Box>
   );
 };

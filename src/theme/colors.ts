@@ -2,7 +2,7 @@ export const colors = {
   black: '#181C25',
   'grey-dark': '#505C75',
   'grey-dark-2': '#737D91',
-  grey: '#8F97A7',
+  grey: '#323232',
   'grey-disabled': '#CED1D8',
   'grey-pale': '#F7F9FA',
   white: '#FFFFFF',
@@ -13,4 +13,5 @@ export const colors = {
   'purple-light': '#998DD9',
   purple: '#6554C0',
   'purple-dark': '#403294',
+  orange: '#f99b25',
 };
