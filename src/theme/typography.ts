@@ -53,4 +53,12 @@ export const textStyles = {
     lineHeight: 5,
     fontWeight: 'regular',
   },
+  navigation: {
+    fontFamily: 'heading',
+    fontSize: '3rem',
+    lineHeight: '3.5rem',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: 2,
+  },
 };

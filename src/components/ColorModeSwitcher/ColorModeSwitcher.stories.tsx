@@ -17,5 +17,5 @@ const Template: ComponentStory<typeof ColorModeSwitcher> = (args) => (
   <ColorModeSwitcher {...args} />
 );
 
-export const ColorModeSwitcherTemplate = Template.bind({});
-ColorModeSwitcherTemplate.storyName = 'ColorModeSwitcher';
+export const ColorModeSwitcherStory = Template.bind({});
+ColorModeSwitcherStory.storyName = 'ColorModeSwitcher';
