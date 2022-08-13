@@ -7,8 +7,8 @@ export const Home = () => {
   return (
     <Flex {...styles.homeContainer} flexDir="column">
       <Flex flexDir="row">
-        <Text textStyle={'title'}>Designer By heart,&nbsp;</Text>
-        <Text textStyle={'title'} color="orange">
+        <Text textStyle="heading-home">Designer By heart,&nbsp;</Text>
+        <Text textStyle="heading-home" color="orange">
           Developer By choice
         </Text>
       </Flex>
@@ -20,8 +20,10 @@ export const Home = () => {
         borderRadius="full"
         my={4}
       />
-      <Text textStyle={'title'}>Hey! I&apos;m Michael, take a look at my</Text>
-      <Text textStyle={'title'}>
+      <Text textStyle="heading-home">
+        Hey! I&apos;m Michael, take a look at my
+      </Text>
+      <Text textStyle="heading-home">
         <>
           <Link href="/projects">Projects</Link>,{' '}
           <Link href="/timeline">Timeline</Link> or more{' '}

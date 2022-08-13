@@ -20,7 +20,7 @@ export const Sidebar = ({ navigationItems }: navigationType) => {
                 key={navigationItem.name}
               >
                 {navigationItem.link ? (
-                  <Link href={navigationItem.link} variant="navigation">
+                  <Link href={navigationItem.link} variant="link-white">
                     {navigationItem.name}
                   </Link>
                 ) : (

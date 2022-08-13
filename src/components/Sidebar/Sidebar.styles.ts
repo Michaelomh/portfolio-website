@@ -17,7 +17,7 @@ export const sidebarLogoWrapper = {
 };
 
 export const sidebarContainer = {
-  w: '25%',
+  w: 'full',
   h: 'full',
   bgColor: 'grey',
 };

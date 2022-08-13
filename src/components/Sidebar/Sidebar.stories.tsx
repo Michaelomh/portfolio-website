@@ -15,7 +15,7 @@ export default {
   title: 'Component/Sidebar',
   decorators: [
     (Story) => (
-      <Box height="100vh">
+      <Box height="100vh" w="25%">
         <Story />
       </Box>
     ),

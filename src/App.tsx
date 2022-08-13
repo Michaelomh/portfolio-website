@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Flex } from '@chakra-ui/react';
+import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react';
 import { Routes, Route } from 'react-router-dom';
 import { About } from './pages/About/About';
 import { Home } from './pages/Home/Home';
@@ -16,13 +16,16 @@ const navigationItems: navigationItem[] = [
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Flex w="100vw" h="100vh">
-      <Sidebar navigationItems={navigationItems} />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-      </Routes>
-    </Flex>
+    <Grid w="100vw" h="100vh" templateColumns="25% 75%">
+      <GridItem>
+        <Sidebar navigationItems={navigationItems} />
+      </GridItem>
+      <GridItem>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </GridItem>
+    </Grid>
   </ChakraProvider>
 );

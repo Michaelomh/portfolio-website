@@ -8,10 +8,18 @@ export const Link = {
     },
   },
   variants: {
-    navigation: {
+    'link-white': {
       color: 'white',
       _hover: {
         color: 'orange',
+        textDecoration: 'none',
+        cursor: 'pointer',
+      },
+    },
+    'link-black': {
+      color: 'black',
+      _hover: {
+        color: 'orange-dark',
         textDecoration: 'none',
         cursor: 'pointer',
       },
