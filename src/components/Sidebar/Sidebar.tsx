@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Text, Image, Link } from '@chakra-ui/react';
 import Logo from './avatar.png';
 import * as styles from './Sidebar.styles';
-import { navigationType } from './sidebar.types';
+import { navigationType } from './Sidebar.types';
 
 export const Sidebar = ({ navigationItems }: navigationType) => {
   return (
@@ -20,7 +20,7 @@ export const Sidebar = ({ navigationItems }: navigationType) => {
                 key={navigationItem.name}
               >
                 {navigationItem.link ? (
-                  <Link href={navigationItem.link} {...styles.sidebarLink}>
+                  <Link href={navigationItem.link} variant="navigation">
                     {navigationItem.name}
                   </Link>
                 ) : (

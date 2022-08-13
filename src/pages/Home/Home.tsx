@@ -1,10 +1,33 @@
 import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
+import { Flex, Text, Image, Link } from '@chakra-ui/react';
+import * as styles from './Home.styles';
+import michael from './michael.png';
 
 export const Home = () => {
   return (
-    <Box>
-      <Text textStyle={'heading1'}>Home 2</Text>
-    </Box>
+    <Flex {...styles.homeContainer} flexDir="column">
+      <Flex flexDir="row">
+        <Text textStyle={'title'}>Designer By heart,&nbsp;</Text>
+        <Text textStyle={'title'} color="orange">
+          Developer By choice
+        </Text>
+      </Flex>
+      <Image
+        src={michael}
+        boxSize="30%"
+        width="auto"
+        alt="Michael Ong"
+        borderRadius="full"
+        my={4}
+      />
+      <Text textStyle={'title'}>Hey! I&apos;m Michael, take a look at my</Text>
+      <Text textStyle={'title'}>
+        <>
+          <Link href="/projects">Projects</Link>,{' '}
+          <Link href="/timeline">Timeline</Link> or more{' '}
+          <Link href="/about">About Me</Link>.
+        </>
+      </Text>
+    </Flex>
   );
 };

@@ -53,6 +53,14 @@ export const textStyles = {
     lineHeight: 5,
     fontWeight: 'regular',
   },
+  title: {
+    fontFamily: 'heading',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
+    fontWeight: 'bold',
+    fontSize: '2em',
+    color: 'black',
+  },
   navigation: {
     fontFamily: 'heading',
     fontSize: '3rem',
