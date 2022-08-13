@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Center, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import * as styles from './About.styles';
 import {
   AiFillLinkedin,
