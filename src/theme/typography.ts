@@ -12,15 +12,18 @@ export const fonts = {
 export const textStyles = {
   heading1: {
     fontFamily: 'heading',
-    fontSize: '28px',
+    fontSize: '2em',
     lineHeight: 8,
-    fontWeight: 'medium',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    color: 'grey',
   },
   heading2: {
     fontFamily: 'heading',
     fontSize: '24px',
     lineHeight: 7,
-    fontWeight: 'medium',
+    fontWeight: 'bold',
   },
   heading3: {
     fontFamily: 'heading',
@@ -35,11 +38,12 @@ export const textStyles = {
     fontWeight: 'medium',
     letterSpacing: '1.5px',
   },
-  body1: {
+  'body-text': {
     fontFamily: 'body',
-    fontSize: '15px',
-    lineHeight: 5,
-    fontWeight: 'regular',
+    fontSize: '1.2em',
+    lineHeight: 7,
+    fontWeight: 'normal',
+    textAlign: 'justify',
   },
   body2: {
     fontFamily: 'body',
@@ -53,13 +57,29 @@ export const textStyles = {
     lineHeight: 5,
     fontWeight: 'regular',
   },
-  title: {
+  'heading-home': {
     fontFamily: 'heading',
     textTransform: 'uppercase',
     letterSpacing: '1px',
     fontWeight: 'bold',
     fontSize: '2em',
     color: 'black',
+  },
+  title: {
+    fontFamily: 'heading',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    fontWeight: 'bold',
+    fontSize: '3em',
+    color: 'grey',
+    lineHeight: '1em',
+  },
+  subtitle: {
+    fontFamily: 'body',
+    fontWeight: 'bold',
+    fontSize: '1.3em',
+    color: 'grey-dark',
+    fontStyle: 'italic',
   },
   navigation: {
     fontFamily: 'heading',

@@ -1,7 +1,6 @@
 export const colors = {
   black: '#181C25',
-  'grey-dark': '#505C75',
-  'grey-dark-2': '#737D91',
+  'grey-dark': '#353b48',
   grey: '#323232',
   'grey-disabled': '#CED1D8',
   'grey-pale': '#F7F9FA',
