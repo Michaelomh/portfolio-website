@@ -14,4 +14,6 @@ export const colors = {
   purple: '#6554C0',
   'purple-dark': '#403294',
   orange: '#f99b25',
+  'orange-dark': '#e67e22',
+  'orange-darker': '#d35400',
 };

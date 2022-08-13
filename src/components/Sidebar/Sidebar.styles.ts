@@ -23,5 +23,8 @@ export const sidebarContainer = {
 };
 
 export const sidebarLink = {
-  _hover: { textDecoration: 'none;' },
+  color: 'white',
+  _hover: {
+    color: 'orange',
+  },
 };
