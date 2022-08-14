@@ -24,5 +24,13 @@ export const Link = {
         cursor: 'pointer',
       },
     },
+    'link-noChange': {
+      color: 'black',
+      _hover: {
+        color: 'black',
+        textDecoration: 'none',
+        cursor: 'pointer',
+      },
+    },
   },
 };
