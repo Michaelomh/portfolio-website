@@ -4,6 +4,6 @@ import { IconType } from 'react-icons';
 
 export type AboutLinkType = {
   icon: ChakraComponent<typeof Icon> | IconType;
-  href: string;
+  href: URL;
   text?: string;
 };

@@ -4,7 +4,10 @@ import theme from '../src/theme';
 export const parameters = {
   controls: { expanded: true },
   storySort: {
-    order: ['Components'],
+    order: ['Components', 'Page'],
+  },
+  options: {
+    showPanel: true,
   },
 };
 

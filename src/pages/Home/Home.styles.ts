@@ -2,5 +2,5 @@ export const homeContainer = {
   justifyContent: 'center',
   alignItems: 'center',
   w: 'full',
-  h: 'full',
+  h: '100vh',
 };

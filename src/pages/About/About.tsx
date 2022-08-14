@@ -10,6 +10,29 @@ import { SiTableau } from 'react-icons/si';
 import { AboutLink } from '../../components/AboutLink';
 import { Header } from '../../components';
 
+const AboutLinkList = [
+  {
+    text: 'Linkedin',
+    icon: AiFillLinkedin,
+    href: new URL('https://www.linkedin.com/in/michaelomh/'),
+  },
+  {
+    text: 'Github',
+    icon: AiFillGithub,
+    href: new URL('https://github.com/Michaelomh'),
+  },
+  {
+    text: 'Tableau',
+    icon: SiTableau,
+    href: new URL('https://public.tableau.com/app/profile/ong.ming.hao#!/'),
+  },
+  {
+    text: 'Behance',
+    icon: AiFillBehanceSquare,
+    href: new URL('https://www.behance.net/MichaelOMH'),
+  },
+];
+
 export const About = () => {
   return (
     <Flex flexDir="column" {...styles.aboutPage}>
@@ -39,28 +62,14 @@ export const About = () => {
             Check out my other links
           </Text>
           <Flex gap={12}>
-            <AboutLink
-              href="https://www.linkedin.com/in/michaelomh/"
-              icon={AiFillLinkedin}
-              text="Linkedin"
-            />
-
-            <AboutLink
-              href="https://github.com/Michaelomh"
-              icon={AiFillGithub}
-              text="Github"
-            />
-
-            <AboutLink
-              href="https://public.tableau.com/app/profile/ong.ming.hao#!/"
-              icon={SiTableau}
-              text="Tableau"
-            />
-            <AboutLink
-              href="https://www.behance.net/MichaelOMH"
-              icon={AiFillBehanceSquare}
-              text="behance"
-            />
+            {AboutLinkList.map((aboutLink) => (
+              <AboutLink
+                key={aboutLink.text}
+                href={aboutLink.href}
+                icon={aboutLink.icon}
+                text={aboutLink.text}
+              />
+            ))}
           </Flex>
         </Box>
       </Flex>

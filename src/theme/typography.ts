@@ -21,8 +21,7 @@ export const textStyles = {
   },
   heading2: {
     fontFamily: 'heading',
-    fontSize: '24px',
-    lineHeight: 7,
+    fontSize: '1.5em',
     fontWeight: 'bold',
   },
   heading3: {

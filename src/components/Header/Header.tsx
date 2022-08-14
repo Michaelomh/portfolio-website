@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Box } from '@chakra-ui/react';
+import * as styles from './Header.styles';
 
 type HeaderType = {
   headerText: string;
@@ -7,8 +8,8 @@ type HeaderType = {
 
 export const Header = ({ headerText }: HeaderType) => {
   return (
-    <Box pos="fixed" pt={24}>
-      <Text textStyle="title">{headerText}</Text>
+    <Box textAlign="center" pos="fixed" {...styles.HeaderContainer}>
+      <Text {...styles.HeaderText}>{headerText}</Text>
     </Box>
   );
 };
