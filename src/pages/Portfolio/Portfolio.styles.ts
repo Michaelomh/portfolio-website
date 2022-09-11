@@ -9,11 +9,12 @@ export const portfolioContainer = {
 };
 
 export const portfolioProjects = {
-  templateColumns: 'repeat(3, 1fr)',
+  templateColumns: 'repeat(2, 1fr)',
   gap: 8,
   w: '960px',
   h: 'calc(100vh - 180px - 180px)',
   px: 4,
+  pt: 4,
   css: {
     '&::-webkit-scrollbar': {
       width: '12px',

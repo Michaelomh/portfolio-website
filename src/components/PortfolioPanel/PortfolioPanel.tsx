@@ -32,13 +32,19 @@ export const PortfolioPanel = ({
           {...styles.PortfolioPanelImage}
         />
         <Box {...styles.PortfolioPanelInformation}>
-          <Text textStyle="heading2" noOfLines={1}>
-            {title}
-          </Text>
-          <Text textStyle="body2" noOfLines={4}>
+          <Flex alignItems="center" gap={4}>
+            <Text textStyle="heading2" noOfLines={1} flex={1} title={title}>
+              {title}
+            </Text>
+
+            <Text textStyle="body2" fontStyle="italic">
+              {formatDate(date)}
+            </Text>
+          </Flex>
+          <Text textStyle="body2" noOfLines={4} my={4}>
             {description}
           </Text>
-          <Flex mt={2}>
+          <Flex {...styles.PortfolioPanelTagContainer} wrap="wrap">
             {tags &&
               tags.map((tag) => (
                 <Tag size="sm" key={tag} variant="solid">
@@ -46,9 +52,6 @@ export const PortfolioPanel = ({
                 </Tag>
               ))}
             <Spacer />
-            <Text textStyle="body2" fontStyle="italic">
-              {formatDate(date)}
-            </Text>
           </Flex>
         </Box>
       </Box>
