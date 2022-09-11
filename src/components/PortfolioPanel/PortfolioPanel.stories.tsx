@@ -37,7 +37,7 @@ export default {
     },
     tags: {
       description: 'Tags related to the project',
-      defaultValue: [],
+      defaultValue: ['Sample Tag'],
     },
     date: {
       description: 'Date of when the project was completed.',

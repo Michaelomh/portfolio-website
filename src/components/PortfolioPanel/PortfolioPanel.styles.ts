@@ -1,7 +1,7 @@
 export const PortfolioPanelContainer = {
   width: 'full',
-  height: 'full',
   boxShadow: 'lg',
+  borderBottomRadius: 8,
 };
 
 export const PortfolioPanelImage = {
@@ -16,4 +16,9 @@ export const PortfolioPanelInformation = {
   borderBottomRadius: 8,
   borderColor: '#eeeeee',
   p: 4,
+};
+
+export const PortfolioPanelTagContainer = {
+  mt: 2,
+  gap: 1,
 };
