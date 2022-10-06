@@ -27,7 +27,7 @@ export const Portfolio = () => {
               description={
                 'Developed an updated portfolio page to showcase all my work with updated technologies.'
               }
-              tags={['React', 'HTML/CSS', 'Typescript', 'Figma']}
+              tags={['React', 'HTML/CSS', 'Typescript', 'Figma', 'Netlify']}
               date={new Date(2022, 0, 9)}
               url={new URL('', BASE_URL)}
             />
@@ -40,7 +40,14 @@ export const Portfolio = () => {
               description={
                 'Developed a restaurant application for a restaurant/bar as part of some freelance work.'
               }
-              tags={['React', 'Next.js', 'HTML/CSS', 'Javascript', 'Figma']}
+              tags={[
+                'React',
+                'Next.js',
+                'HTML/CSS',
+                'Javascript',
+                'Figma',
+                'Netlify',
+              ]}
               date={new Date(2020, 0, 1)}
               url={new URL('https://marvelous-crepe-bbd4f4.netlify.app/')}
             />

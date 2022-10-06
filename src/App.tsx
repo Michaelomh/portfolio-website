@@ -7,6 +7,8 @@ import { Portfolio } from './pages/Portfolio/Portfolio';
 import theme from './theme/index';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { navigationItem } from './components/Sidebar/Sidebar.types';
+import { ProjectIot } from './pages/Portfolio/Projects/iot-shopping-cart/IotPorfolio';
+import './App.css';
 
 const navigationItems: navigationItem[] = [
   { name: 'About Me', link: '/about' },
@@ -26,6 +28,7 @@ export const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="projects/iot-shopping-cart" element={<ProjectIot />} />
         </Routes>
       </GridItem>
     </Grid>
