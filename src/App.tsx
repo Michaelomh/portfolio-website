@@ -7,6 +7,7 @@ import { Portfolio } from './pages/Portfolio/Portfolio';
 import theme from './theme/index';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { navigationItem } from './components/Sidebar/Sidebar.types';
+import './App.css';
 
 const navigationItems: navigationItem[] = [
   { name: 'About Me', link: '/about' },

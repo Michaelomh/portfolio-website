@@ -33,5 +33,6 @@ module.exports = {
     'no-unused-vars': ['off'],
     eqeqeq: ['error'],
     'prefer-const': ['error'],
+    'react/no-children-prop': ['off'],
   },
 };

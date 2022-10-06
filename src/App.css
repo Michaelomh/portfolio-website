@@ -1,0 +1,33 @@
+.markdown h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: grey;
+}
+
+.markdown h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.markdown h3 {
+  font-size: 20px;
+  font-weight: medium;
+}
+
+.markdown a {
+  text-decoration: underline !important;
+  font-style: italic;
+  color: #576574 !important;
+}
+
+.markdown a:hover {
+  color: #f99b25 !important;
+}
+
+.markdown ul,
+.markdown ol {
+  padding: 0px 0px 0px 40px;
+  margin: 16px 0px;
+}
