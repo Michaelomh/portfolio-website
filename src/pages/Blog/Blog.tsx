@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import * as styles from './Blog.styles';
 import { Header } from '../../components';
 
