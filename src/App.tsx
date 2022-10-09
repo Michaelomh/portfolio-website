@@ -27,9 +27,10 @@ export const App = () => (
       w="100vw"
       h="100vh"
       templateColumns={['1fr', '1fr', '25% 75%']}
+      templateRows={['80px 1fr', '92px 1fr', '1fr']}
       overflow="hidden"
     >
-      <GridItem>
+      <GridItem h="auto">
         <Sidebar navigationItems={navigationItems} />
       </GridItem>
       <GridItem>

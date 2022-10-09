@@ -34,5 +34,6 @@ module.exports = {
     eqeqeq: ['error'],
     'prefer-const': ['error'],
     'react/no-children-prop': ['off'],
+    '@typescript-eslint/ban-ts-comment': 0,
   },
 };

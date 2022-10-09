@@ -1,6 +1,6 @@
 export const sidebarContainer = {
   w: 'full',
-  h: 'full',
+  h: ['80px', '116px', 'full'],
   bgColor: 'grey',
 };
 
@@ -13,7 +13,7 @@ export const sidebarBranding = {
     alignItems: 'center',
   },
   desktopLogo: {
-    h: [null, '84px', 'full'],
+    h: [null, '60px', 'full'],
     display: ['none', 'block'],
   },
   mobileLogo: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Text } from '@chakra-ui/react';
 import * as styles from './About.styles';
 import {
   AiFillLinkedin,
@@ -35,10 +35,10 @@ const AboutLinkList = [
 
 export const About = () => {
   return (
-    <Flex flexDir="column" {...styles.aboutPage}>
+    <Flex flexDir="column" {...styles.aboutPage} overflowY="auto">
       <Header headerText="About" />
-      <Flex {...styles.aboutContainer} flexDir="column">
-        <Box {...styles.aboutTextContainer}>
+      <Flex {...styles.about.container} flexDir="column">
+        <Box {...styles.about.textContainer}>
           <Text textStyle="body-text">
             Hello! My name is Michael, living in Singapore. Currently, I am
             working in J.P. Morgan Chase under Software Engineering Program
@@ -61,16 +61,17 @@ export const About = () => {
           <Text textStyle="heading1" mb={8}>
             Check out my other links
           </Text>
-          <Flex gap={12}>
+          <Grid {...styles.about.linksContainer}>
             {AboutLinkList.map((aboutLink) => (
-              <AboutLink
-                key={aboutLink.text}
-                href={aboutLink.href}
-                icon={aboutLink.icon}
-                text={aboutLink.text}
-              />
+              <GridItem key={aboutLink.text}>
+                <AboutLink
+                  href={aboutLink.href}
+                  icon={aboutLink.icon}
+                  text={aboutLink.text}
+                />
+              </GridItem>
             ))}
-          </Flex>
+          </Grid>
         </Box>
       </Flex>
     </Flex>

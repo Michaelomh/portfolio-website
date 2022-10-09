@@ -14,11 +14,11 @@ import MobileLogo from './mobile-logo.png';
 import * as styles from './Sidebar.styles';
 import { navigationType } from './Sidebar.types';
 import { HiOutlineMenu } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 export const Sidebar = ({ navigationItems }: navigationType) => {
   const [isDesktopView] = useMediaQuery('(min-width: 1280px)');
   const [showNavigation, setShowNavigation] = useBoolean(false);
-  console.log(isDesktopView);
 
   return (
     <Box {...styles.sidebarContainer}>
@@ -61,26 +61,42 @@ export const Sidebar = ({ navigationItems }: navigationType) => {
 const Links = ({ navigationItems }: navigationType) => {
   return (
     <Box
-      pos="absolute"
+      as={motion.div}
+      initial={{ y: '-50px' }}
+      animate={{ y: '-10px' }}
+      // @ts-ignore
+      transition={{
+        type: 'linear',
+        ease: 'easeIn',
+      }}
+      pos={['absolute']}
       textAlign={['center', 'center', 'left']}
       {...styles.sidebarLinks.container}
     >
       {navigationItems &&
         navigationItems.map((navigationItem) => {
           return (
-            <Text
-              noOfLines={1}
-              {...styles.sidebarLinks.links}
-              key={navigationItem.name}
-            >
+            <>
               {navigationItem.link ? (
                 <Link href={navigationItem.link} variant="link-white">
-                  {navigationItem.name}
+                  <Text
+                    noOfLines={1}
+                    {...styles.sidebarLinks.links}
+                    key={navigationItem.name}
+                  >
+                    {navigationItem.name}
+                  </Text>
                 </Link>
               ) : (
-                <>{navigationItem.name}</>
+                <Text
+                  noOfLines={1}
+                  {...styles.sidebarLinks.links}
+                  key={navigationItem.name}
+                >
+                  {navigationItem.name}
+                </Text>
               )}
-            </Text>
+            </>
           );
         })}
     </Box>
