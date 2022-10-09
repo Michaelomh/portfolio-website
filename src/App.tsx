@@ -13,6 +13,7 @@ import { IotDashboard } from './pages/Portfolio/Projects/iot-shopping-cart/IotDa
 import { OnliveShowcase } from './pages/Portfolio/Projects/onlive/OnliveShowcase';
 import { DomesticFlightsDashboard } from './pages/Portfolio/Projects/analyzing-domestic-us-flights/DomesticFlightsDashboard';
 import { Blog } from './pages/Blog/Blog';
+import { PageNotFound } from './components/PageNotFound';
 
 const navigationItems: navigationItem[] = [
   { name: 'About Me', link: '/about' },
@@ -42,6 +43,7 @@ export const App = () => (
             element={<DomesticFlightsDashboard />}
           />
           <Route path="projects/onlive" element={<OnliveShowcase />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </GridItem>
     </Grid>
