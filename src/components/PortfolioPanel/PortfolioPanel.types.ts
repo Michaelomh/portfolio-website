@@ -5,5 +5,5 @@ export type PortfolioPanelType = {
   description: string;
   tags?: string[];
   date: Date;
-  url: URL;
+  url?: string;
 };

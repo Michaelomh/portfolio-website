@@ -22,6 +22,11 @@
   color: #576574 !important;
 }
 
+.markdown p {
+  margin-bottom: 12px;
+  line-height: 28px;
+}
+
 .markdown a:hover {
   color: #f99b25 !important;
 }

@@ -16,9 +16,10 @@ export const PortfolioPanel = ({
   description,
   tags,
   date,
+  url = '#',
 }: PortfolioPanelType) => {
   return (
-    <Link variant="link-noChange">
+    <Link variant="link-noChange" href={url}>
       <Box
         {...styles.PortfolioPanelContainer}
         as={motion.div}

@@ -1,23 +1,20 @@
 import React from 'react';
-import { Box, Flex, Grid, GridItem } from '@chakra-ui/react';
+import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import * as styles from './Portfolio.styles';
 import { Header, PortfolioPanel } from '../../components';
 import barImage from './Projects/bar-website/restaurant-app.png';
-import smubiaImage from './Projects/smubia-live-dashboard/VA-SMUBIA.jpg';
+import smubiaImage from './Projects/smubia-live-dashboard/smubia-1.jpg';
 import sissWebsiteImage from './Projects/siss-website-redesign/ellipsisC5.jpg';
 import onliveImage from './Projects/onlive/onlive_Showcase.jpg';
 import iotImage from './Projects/iot-shopping-cart/iot-project.jpg';
 import datayseImage from './Projects/datayse/Datayse_Project.jpg';
 import vaImage from './Projects/analyzing-domestic-us-flights/VA_project.jpg';
 
-const BASE_URL = 'http://www.datayse.com';
-
 export const Portfolio = () => {
   return (
     <Flex {...styles.portfolioPage} flexDir="column">
       <Header headerText="Portfolio" />
-      <Flex {...styles.portfolioContainer} flexDir="column" gap={8}>
-        <Box h="180px"></Box>
+      <Flex {...styles.portfolioContainer} flexDir="column">
         <Grid {...styles.portfolioProjects} overflowY="auto">
           <GridItem>
             <PortfolioPanel
@@ -29,7 +26,7 @@ export const Portfolio = () => {
               }
               tags={['React', 'HTML/CSS', 'Typescript', 'Figma', 'Netlify']}
               date={new Date(2022, 0, 9)}
-              url={new URL('', BASE_URL)}
+              url="http://www.datayse.com"
             />
           </GridItem>
           <GridItem>
@@ -49,7 +46,7 @@ export const Portfolio = () => {
                 'Netlify',
               ]}
               date={new Date(2020, 0, 1)}
-              url={new URL('https://marvelous-crepe-bbd4f4.netlify.app/')}
+              url="https://marvelous-crepe-bbd4f4.netlify.app/"
             />
           </GridItem>
           <GridItem>
@@ -62,11 +59,7 @@ export const Portfolio = () => {
               }
               tags={['jQuery', 'Javascript', 'HTML/CSS']}
               date={new Date(2018, 0, 7)}
-              url={
-                new URL(
-                  'https://michaelomh.github.io/SIS_Metamorphosis_coding_challenge/'
-                )
-              }
+              url="https://michaelomh.github.io/SIS_Metamorphosis_coding_challenge/"
             />
           </GridItem>
           <GridItem>
@@ -85,7 +78,7 @@ export const Portfolio = () => {
                 'Google Sheets',
               ]}
               date={new Date(2017, 0, 8)}
-              url={new URL('', BASE_URL)}
+              url="/projects/smubia-live-dashboard"
             />
           </GridItem>
           <GridItem>
@@ -107,7 +100,7 @@ export const Portfolio = () => {
                 'SQL',
               ]}
               date={new Date(2017, 0, 4)}
-              url={new URL('', BASE_URL)}
+              url="/projects/iot-shopping-cart"
             />
           </GridItem>
           <GridItem>
@@ -122,7 +115,7 @@ export const Portfolio = () => {
                 'Created a dashboard to view various passengers travelling within United States in 2015. Helping airline companies to plan and optimize their flight routes, as well as finding new routes to offer passengers.'
               }
               date={new Date(2017, 0, 1)}
-              url={new URL('', BASE_URL)}
+              url="/projects/analyzing-domestic-us-flights"
             />
           </GridItem>
           <GridItem>
@@ -135,7 +128,7 @@ export const Portfolio = () => {
                 'Showcase a selection of work done for Onlive.io (formally known as ZeGuestList). ZeGuestList is an IT solution agency in the MICE industry creating custom projects for various events.'
               }
               date={new Date(2016, 0, 8)}
-              url={new URL('', BASE_URL)}
+              url="/projects/onlive"
             />
           </GridItem>
         </Grid>
