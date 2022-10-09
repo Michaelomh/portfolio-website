@@ -47,10 +47,11 @@ export const OnliveShowcase = () => {
         alt="Image of check-in booth"
         pt={8}
         m="0px auto"
-        w="600px"
+        w="100%"
+        maxW="600px"
       />
       <Text textStyle="image-caption">Check-in booth</Text>
-      <Box m="0px auto" w="400px">
+      <Box m="0px auto" maxW="500px" w="100%" pt={8}>
         <video controls muted loop>
           <source src={onliveVideo1} type="video/mp4" />
         </video>
@@ -63,6 +64,7 @@ export const OnliveShowcase = () => {
         alt="Image of pre-event website personality identifier"
         pt={8}
         m="0px auto"
+        maxW="100%"
       />
       <Text textStyle="image-caption">
         Pre-event website personality identifier
@@ -73,17 +75,18 @@ export const OnliveShowcase = () => {
         alt="image of jukebox and playlist"
         pt={8}
         m="0px auto"
+        maxW="100%"
       />
       <Text textStyle="image-caption">Jukebox + Playlist</Text>
 
-      <Box m="0px auto" w="400px">
+      <Box m="0px auto" maxW="400px" w="80%" pt={8}>
         <video controls muted loop>
           <source src={onliveVideo3} type="video/mp4" />
         </video>
       </Box>
       <Text textStyle="image-caption">Jukebox in action</Text>
 
-      <Box m="0px auto" w="400px">
+      <Box m="0px auto" maxW="400px" w="80%" pt={8}>
         <video controls muted loop>
           <source src={onliveVideo2} type="video/mp4" />
         </video>

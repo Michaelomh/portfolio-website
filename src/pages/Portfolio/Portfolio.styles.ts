@@ -1,31 +1,23 @@
 export const portfolioPage = {
+  w: ['100vw', 'full'],
+  h: ['calc(100vh - 80px)', 'calc(100vh - 92px)', '100vh'],
   alignItems: 'center',
-  w: 'full',
-  h: 'full',
 };
 
 export const portfolioContainer = {
   h: 'full',
-  pt: 8,
+  pt: [0, 0, 8],
 };
 
 export const portfolioProjects = {
-  templateColumns: 'repeat(2, 1fr)',
+  templateColumns: ['1fr', 'repeat(2, 1fr)'],
   gap: 8,
   maxW: '960px',
-  h: 'calc(100vh - 180px - 180px)',
+  h: [
+    'calc(100vh - 80px - 180px)',
+    'calc(100vh - 92px - 180px)',
+    'calc(100vh - 180px - 180px)',
+  ],
   px: 4,
   pt: 4,
-  css: {
-    '&::-webkit-scrollbar': {
-      width: '12px',
-    },
-    '&::-webkit-scrollbar-track': {
-      width: '6px',
-    },
-    '&::-webkit-scrollbar-thumb': {
-      background: 'grey',
-      borderRadius: '24px',
-    },
-  },
 };

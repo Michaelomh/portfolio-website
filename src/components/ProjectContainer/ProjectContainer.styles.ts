@@ -1,8 +1,9 @@
 export const ProjectContainer = {
-  h: '100vh',
+  h: ['calc(100vh - 80px)', 'calc(100vh - 92px)', '100vh'],
 };
 
 export const ProjectMarkdownContainer = {
-  p: 8,
+  px: 8,
   pb: 16,
+  pt: [0, 0, 8],
 };
