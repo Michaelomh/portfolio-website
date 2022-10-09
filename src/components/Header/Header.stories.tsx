@@ -22,6 +22,11 @@ export default {
       type: 'string',
       defaultValue: 'header',
     },
+    subheaderText: {
+      description: 'subheader text to display for `Header`',
+      type: 'string',
+      defaultValue: 'subheader',
+    },
   },
 } as ComponentMeta<typeof Header>;
 

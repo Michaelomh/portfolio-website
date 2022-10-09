@@ -8,12 +8,16 @@ import theme from './theme/index';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { navigationItem } from './components/Sidebar/Sidebar.types';
 import './App.css';
+import { SmubiaLiveDashboard } from './pages/Portfolio/Projects/smubia-live-dashboard/SmubiaLiveDashboard';
+import { IotDashboard } from './pages/Portfolio/Projects/iot-shopping-cart/IotDashboard';
+import { OnliveShowcase } from './pages/Portfolio/Projects/onlive/OnliveShowcase';
+import { DomesticFlightsDashboard } from './pages/Portfolio/Projects/analyzing-domestic-us-flights/DomesticFlightsDashboard';
+import { Blog } from './pages/Blog/Blog';
 
 const navigationItems: navigationItem[] = [
   { name: 'About Me', link: '/about' },
   { name: 'Portfolio', link: '/portfolio' },
-  { name: 'Timeline', link: '/timeline' },
-  { name: 'Search', link: '/search' },
+  { name: 'Blog', link: '/blog' },
 ];
 
 export const App = () => (
@@ -27,6 +31,17 @@ export const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="blog" element={<Blog />} />
+          <Route
+            path="projects/smubia-live-dashboard"
+            element={<SmubiaLiveDashboard />}
+          />
+          <Route path="projects/iot-shopping-cart" element={<IotDashboard />} />
+          <Route
+            path="projects/analyzing-domestic-us-flights"
+            element={<DomesticFlightsDashboard />}
+          />
+          <Route path="projects/onlive" element={<OnliveShowcase />} />
         </Routes>
       </GridItem>
     </Grid>

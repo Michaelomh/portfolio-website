@@ -88,4 +88,12 @@ export const textStyles = {
     textTransform: 'uppercase',
     letterSpacing: 2,
   },
+  'image-caption': {
+    mt: 2,
+    fontFamily: 'heading',
+    fontStyle: 'italic',
+    textAlign: 'center',
+    color: 'grey-dark',
+    fontSize: '1.2rem',
+  },
 };

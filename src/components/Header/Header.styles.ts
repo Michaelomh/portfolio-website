@@ -1,11 +1,15 @@
 export const HeaderContainer = {
   pt: 24,
   pb: 8,
-  w: '75%',
-  h: '180px',
+  px: 4,
+  w: 'full',
   bgColor: 'white',
 };
 
 export const HeaderText = {
   textStyle: 'title',
+};
+
+export const SubheaderText = {
+  textStyle: 'subtitle',
 };

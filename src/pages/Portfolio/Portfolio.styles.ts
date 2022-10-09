@@ -6,12 +6,13 @@ export const portfolioPage = {
 
 export const portfolioContainer = {
   h: 'full',
+  pt: 8,
 };
 
 export const portfolioProjects = {
   templateColumns: 'repeat(2, 1fr)',
   gap: 8,
-  w: '960px',
+  maxW: '960px',
   h: 'calc(100vh - 180px - 180px)',
   px: 4,
   pt: 4,

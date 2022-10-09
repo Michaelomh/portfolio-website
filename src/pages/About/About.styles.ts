@@ -1,7 +1,7 @@
 export const aboutPage = {
   alignItems: 'center',
   w: 'full',
-  h: 'full',
+  h: '75%',
 };
 
 export const aboutContainer = {
