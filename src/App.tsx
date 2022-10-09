@@ -17,12 +17,17 @@ import { Blog } from './pages/Blog/Blog';
 const navigationItems: navigationItem[] = [
   { name: 'About Me', link: '/about' },
   { name: 'Portfolio', link: '/portfolio' },
-  { name: 'Blog', link: '/blog' },
+  { name: 'Blog Posts', link: '/blog' },
 ];
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Grid w="100vw" h="100vh" templateColumns="25% 75%" overflow="hidden">
+    <Grid
+      w="100vw"
+      h="100vh"
+      templateColumns={['1fr', '1fr', '25% 75%']}
+      overflow="hidden"
+    >
       <GridItem>
         <Sidebar navigationItems={navigationItems} />
       </GridItem>
