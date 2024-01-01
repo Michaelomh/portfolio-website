@@ -1,6 +1,6 @@
 export const sidebarContainer = {
   w: 'full',
-  h: ['80px', '92px', 'full'],
+  h: ['80px', '116px', 'full'],
   bgColor: 'grey',
 };
 
